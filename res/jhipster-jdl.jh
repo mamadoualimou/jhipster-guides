@@ -19,7 +19,7 @@ relationship ManyToMany {
 
 relationship ManyToOne {
 	Ticket{project(name)} to Project,
-	Ticket{assignedTo(login)} to User
+	Ticket{assignedTo(login)} to User with builtInEntity
 }
 
 paginate Ticket with pagination
